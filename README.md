@@ -1,0 +1,2 @@
+# LibraryVanillaJS
+Vanilla JS Library
