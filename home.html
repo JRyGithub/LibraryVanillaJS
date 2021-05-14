@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Simple Vanilla JS Library</title>
+  <meta name="description" content="Simple Vanilla JS Library">
+  <meta name="author" content="Josh">
+
+  <link rel="stylesheet" href="./styles.css?v=1.0">
+
+</head>
+
+<body>
+    <form action="" method="POST" name="libraryForm" onsubmit="return addBookToLibrary()" id="myForm" class="invisible">
+        <label>Please enter book title:</label>
+        <input type="text" name="title" id="title">
+        <label>Please enter book author:</label>
+        <input type="text" name="author" id="author">
+        <label>Please enter the amount of book pages:</label>
+        <input type="text" name="pages" id="pages">
+        <label>Please enter book genre:</label>
+        <input type="text" name="genre" id="genre">
+        <label>Have you read the book?:</label>
+        <input type="text" name="readBook" id="read" value="No">
+        <button type="reset">Reset Form</button>
+        <input type="submit" value="Submit this Form" name="submit">
+    </form>
+    <table id="libraryTable">
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read</th>
+        </tr>
+    </table>
+    <button class="addbook" onclick="addBookToggle()">New Book</button>
+  <script src="./scripts.js"></script>
+</body>
+</html>
